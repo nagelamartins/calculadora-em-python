@@ -9,7 +9,10 @@ elif operador == "-":
 elif operador == "*":
     resultado = numero1 * numero2
 elif operador == "/":
-    resultado = numero1 / numero2
+    while numero2 == 0:
+        print ("Não é possível realizar divisão por zero.")
+        numero2 = float(input("Digite um número diferente de zero: "))
+        resultado = numero1 / numero2
 else:
     resultado = "Erro! Operador inválido!"
 
